@@ -9,28 +9,28 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // Hello Beautiful Boutique brand palette
+        // Hello Beautiful Boutique brand palette — girlish dark rose + light pink
         wine: {
-          DEFAULT: "#5C1A34",
-          light: "#7A2745",
-          dark: "#3F1024"
+          DEFAULT: "#7A1F4D",
+          light: "#9B3A6B",
+          dark: "#4F1233"
         },
         gold: {
-          DEFAULT: "#C9A664",
-          light: "#E3CFA0",
-          dark: "#A8813F"
+          DEFAULT: "#D6A574",
+          light: "#EAD2AE",
+          dark: "#B0824C"
         },
         ivory: {
-          DEFAULT: "#FBF6EE",
-          dark: "#F3EBDC"
+          DEFAULT: "#FFF7F5",
+          dark: "#FCE9E7"
         },
         blush: {
-          DEFAULT: "#F1DADD",
-          dark: "#E7C2C9"
+          DEFAULT: "#F9DCE6",
+          dark: "#F2C0D3"
         },
         charcoal: {
-          DEFAULT: "#241C1F",
-          light: "#3A2E32"
+          DEFAULT: "#2B1620",
+          light: "#40222F"
         }
       },
       fontFamily: {
