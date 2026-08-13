@@ -1,5 +1,25 @@
-import { siteConfig } from "@/lib/config";
+import { siteConfig, featuredReviews } from "@/lib/config";
 import Reveal from "./Reveal";
+import TiltCard from "./TiltCard";
+
+const previewReviews = featuredReviews.slice(0, 6);
+
+const avatarColors = ["#7A1F4D", "#B0824C", "#9B3A6B", "#5F8B6E", "#4A6FA5", "#B5654F"];
+
+function getInitials(name: string) {
+  return name
+    .split(" ")
+    .map((part) => part[0])
+    .filter(Boolean)
+    .slice(0, 2)
+    .join("")
+    .toUpperCase();
+}
+
+function getAvatarColor(name: string) {
+  const index = name.charCodeAt(0) % avatarColors.length;
+  return avatarColors[index];
+}
 
 export default function Reviews() {
   return (
@@ -42,12 +62,44 @@ export default function Reviews() {
           </div>
         </Reveal>
 
-        <Reveal delayMs={200} className="mt-10">
-          <p className="mx-auto max-w-xl text-sm leading-relaxed text-charcoal/60">
-            We keep this section honest: individual review quotes will appear here once connected to
-            our live Google Business Profile, rather than being written for the website.
-          </p>
-        </Reveal>
+        {previewReviews.length > 0 ? (
+          <div className="mt-14 grid gap-6 text-left sm:grid-cols-2 lg:grid-cols-3">
+            {previewReviews.map((review, i) => (
+              <Reveal key={review.id} delayMs={(i % 3) * 100} className="group">
+                <TiltCard className="h-full rounded-3xl bg-ivory p-6 shadow-card">
+                  <div className="flex items-center gap-3">
+                    <div
+                      className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full text-sm font-semibold text-ivory"
+                      style={{ backgroundColor: getAvatarColor(review.name) }}
+                      aria-hidden="true"
+                    >
+                      {getInitials(review.name)}
+                    </div>
+                    <div>
+                      <p className="font-display text-base font-semibold text-wine">{review.name}</p>
+                      <div className="mt-0.5 flex items-center gap-0.5 text-gold" aria-hidden="true">
+                        {Array.from({ length: 5 }).map((_, starIdx) => (
+                          <StarIcon
+                            key={starIdx}
+                            className={`h-3.5 w-3.5 ${starIdx < review.rating ? "text-gold" : "text-gold/25"}`}
+                          />
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                  <p className="mt-4 text-[15px] font-medium leading-relaxed text-charcoal">{review.text}</p>
+                </TiltCard>
+              </Reveal>
+            ))}
+          </div>
+        ) : (
+          <Reveal delayMs={200} className="mt-10">
+            <p className="mx-auto max-w-xl text-sm leading-relaxed text-charcoal/60">
+              We keep this section honest: individual review quotes will appear here once connected to
+              our live Google Business Profile, rather than being written for the website.
+            </p>
+          </Reveal>
+        )}
       </div>
     </section>
   );
