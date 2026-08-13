@@ -67,9 +67,9 @@ export default function Hero3D() {
       scene.add(group);
 
       const ribbonSpecs = [
-        { color: 0xc9a664, scale: 1.55, radius: 2.1, tube: 0.16, p: 2, q: 3, opacity: 0.85 },
-        { color: 0xf1dadd, scale: 1.15, radius: 1.7, tube: 0.11, p: 3, q: 2, opacity: 0.75 },
-        { color: 0x5c1a34, scale: 0.85, radius: 1.3, tube: 0.07, p: 2, q: 5, opacity: 0.55 }
+        { color: 0xd6a574, scale: 1.55, radius: 2.1, tube: 0.16, p: 2, q: 3, opacity: 0.85 },
+        { color: 0xf9dce6, scale: 1.15, radius: 1.7, tube: 0.11, p: 3, q: 2, opacity: 0.75 },
+        { color: 0x7a1f4d, scale: 0.85, radius: 1.3, tube: 0.07, p: 2, q: 5, opacity: 0.55 }
       ];
 
       const meshes = ribbonSpecs.map((spec, i) => {
