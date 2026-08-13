@@ -273,6 +273,114 @@ export const portfolioItems: PortfolioItem[] = [
   }
 ];
 
+/**
+ * Individual Google review quotes to feature on the site. Only add real
+ * reviews here — copy the exact text, reviewer name and star rating from
+ * your Google Business Profile. Do not invent or paraphrase reviews.
+ */
+export type ReviewItem = {
+  id: string;
+  name: string;
+  rating: 1 | 2 | 3 | 4 | 5;
+  text: string;
+  // Optional: how long ago, e.g. "2 weeks ago" — copy as shown on Google.
+  timeAgo?: string;
+};
+
+export const featuredReviews: ReviewItem[] = [
+  {
+    id: "review-devanshika",
+    name: "Devanshika Tripathi",
+    rating: 5,
+    text: "This is one place which never disappoints. I got my wedding lehenga, multiple blouses and other dresses stitched from here and the pieces came out to be exactly as I had wanted them to be. Rajni di is really good at both understanding your designs, giving practical suggestions to improve them and also giving the perfect fit and finish to each garment.",
+    timeAgo: "a year ago"
+  },
+  {
+    id: "review-sayantika",
+    name: "Sayantika Dutta",
+    rating: 5,
+    text: "Rajni has done everything I needed for my wedding starting from blouses, dupatta, kurta sets and I couldn't ask for anyone better. Attention to detail for everything, the amount of time she has spent for crafting my each pieces is commendable. She happily fixes every single thing until it looks perfect.",
+    timeAgo: "9 months ago"
+  },
+  {
+    id: "review-mamata",
+    name: "Mamata Naik",
+    rating: 5,
+    text: "Rajini is very professional and talented! She stitched my saree blouse perfectly and also altered my oversized lehenga to fit me beautifully. I'm extremely happy with her work — the fitting and finishing are just perfect.",
+    timeAgo: "9 months ago"
+  },
+  {
+    id: "review-madhushree",
+    name: "Madhushree Kumar",
+    rating: 5,
+    text: "Rajni is absolutely amazing! She and her team work absolutely wonderful and I have had many of my clothes stitched from them. I have always received compliments on the clothes stitched with them! Truly visit her boutique for a beautiful experience!",
+    timeAgo: "8 months ago"
+  },
+  {
+    id: "review-sonali",
+    name: "Sonali Das",
+    rating: 5,
+    text: "The best thing I am mostly satisfied with is the fitting is perfect and it's too comfortable to wear. Charges are budget friendly. Owner is very accommodating, gives great suggestions and delivers as per promise — she has such great and super ideas on it.",
+    timeAgo: "a year ago"
+  },
+  {
+    id: "review-evangeline",
+    name: "Evangeline Priscilla",
+    rating: 5,
+    text: "I have had all my blouses stitched here for almost two years now. Ms. Rajini does a wonderful job. She stitches everything to perfection and just how you expect it to be. Would highly recommend.",
+    timeAgo: "a year ago"
+  },
+  {
+    id: "review-sasikala",
+    name: "Sasikala Balasubramanian",
+    rating: 4,
+    text: "Very good work by Ms.Rajini. She had stitched Perfect fitting blouses with nice latest designs for me.",
+    timeAgo: "2 years ago"
+  },
+  {
+    id: "review-shilpa",
+    name: "Shilpa C",
+    rating: 5,
+    text: "Very good experience with Rajani. Clothes were done very well and turned out beautiful.",
+    timeAgo: "2 years ago"
+  },
+  {
+    id: "review-dipanwita",
+    name: "Dipanwita Dash",
+    rating: 5,
+    text: "THE BEST! The fitting is perfect in the first go. She is very accomodating, gives great suggestions and delivers as per promise.",
+    timeAgo: "2 years ago"
+  },
+  {
+    id: "review-saumya",
+    name: "Saumya Sharma",
+    rating: 5,
+    text: "The tailor here helps you to understand the nuances of stitching and provide perfect fitting. Also good place for getting sarees etc upcycled to a dress etc.",
+    timeAgo: "2 years ago"
+  },
+  {
+    id: "review-mohi",
+    name: "Mohi Shukla",
+    rating: 5,
+    text: "On time delivery, good work ethics and great selection of material along with as per cloth recommendations.",
+    timeAgo: "2 years ago"
+  },
+  {
+    id: "review-vaishnavi",
+    name: "Vaishnavi Singh",
+    rating: 5,
+    text: "Best decision to come here, such a kind owner!",
+    timeAgo: "2 years ago"
+  },
+  {
+    id: "review-nalina",
+    name: "Nalina Nanjaiah",
+    rating: 5,
+    text: "I got two silk blouses stitched and the fitting was perfect. Rajini co-ordinated so well with her team and made sure my blouse was delivered on time inspite of her own personal commitment. I was thoroughly impressed with her creativity and the blouses were stitched to perfection. Thank you for making me look beautiful! Special mention to Masterji and Jamshed who are experts in their job and truly work towards customer satisfaction.",
+    timeAgo: "2 years ago"
+  }
+];
+
 export type ProcessStep = {
   number: string;
   title: string;
@@ -410,12 +518,12 @@ export type InstagramTile = {
 };
 
 export const instagramTiles: InstagramTile[] = [
-  { image: "/images/instagram/insta-01.jpg", alt: "Hello Beautiful Boutique Instagram post" },
-  { image: "/images/instagram/insta-02.jpg", alt: "Hello Beautiful Boutique Instagram post" },
-  { image: "/images/instagram/insta-03.jpg", alt: "Hello Beautiful Boutique Instagram post" },
-  { image: "/images/instagram/insta-04.jpg", alt: "Hello Beautiful Boutique Instagram post" },
-  { image: "/images/instagram/insta-05.jpg", alt: "Hello Beautiful Boutique Instagram post" },
-  { image: "/images/instagram/insta-06.jpg", alt: "Hello Beautiful Boutique Instagram post" }
+  { image: "/images/instagram/insta-01.jpg", alt: "Dance costumes designed and stitched by Hello Beautiful Boutique, on stage" },
+  { image: "/images/instagram/insta-02.jpg", alt: "Black and gold embellished dance costume by Hello Beautiful Boutique" },
+  { image: "/images/instagram/insta-03.jpg", alt: "Close-up of hand-detailed dance costume by Hello Beautiful Boutique" },
+  { image: "/images/instagram/insta-04.jpg", alt: "Custom-stitched silk saree blouse by Hello Beautiful Boutique" },
+  { image: "/images/instagram/insta-05.jpg", alt: "Pastel lehenga with contrast dupatta stitched by Hello Beautiful Boutique" },
+  { image: "/images/instagram/insta-06.jpg", alt: "Custom-stitched casual outfit by Hello Beautiful Boutique" }
 ];
 
 export const seo = {
