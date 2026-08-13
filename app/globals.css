@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+::selection {
+  background: theme("colors.blush.DEFAULT");
+  color: theme("colors.wine.DEFAULT");
+}
+
+/* Elegant thin scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: theme("colors.ivory.DEFAULT");
+}
+::-webkit-scrollbar-thumb {
+  background: theme("colors.gold.DEFAULT");
+  border-radius: 999px;
+}
+
+/* Reveal-on-scroll base state; JS toggles .is-visible */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+/* Eyebrow label used above section headings */
+.eyebrow {
+  font-family: var(--font-dmsans);
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+
+/* Hairline divider with gold gradient */
+.hairline {
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    theme("colors.gold.DEFAULT") 50%,
+    transparent 100%
+  );
+}
+
+/* Custom cursor (desktop only, applied via JS after checking pointer: fine) */
+.custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 34px;
+  height: 34px;
+  border: 1px solid theme("colors.gold.DEFAULT");
+  border-radius: 999px;
+  pointer-events: none;
+  z-index: 200;
+  transform: translate(-50%, -50%);
+  transition: width 0.25s ease, height 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
+  mix-blend-mode: multiply;
+}
+.custom-cursor.is-active {
+  width: 54px;
+  height: 54px;
+  background-color: rgba(201, 166, 100, 0.18);
+}
+
+.text-balance {
+  text-wrap: balance;
+}
