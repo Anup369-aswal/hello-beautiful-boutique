@@ -1,19 +1,20 @@
 import type { Metadata, Viewport } from "next";
-import { Playfair_Display, DM_Sans } from "next/font/google";
+import { Cormorant_Garamond, Quicksand } from "next/font/google";
 import "./globals.css";
 import { seo, siteConfig } from "@/lib/config";
 import { getLocalBusinessSchema } from "@/lib/schema";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import StickyMobileCTA from "@/components/StickyMobileCTA";
 
-const playfair = Playfair_Display({
+const playfair = Cormorant_Garamond({
   subsets: ["latin"],
   variable: "--font-playfair",
   display: "swap",
-  weight: ["500", "600", "700"]
+  weight: ["500", "600", "700"],
+  style: ["normal", "italic"]
 });
 
-const dmSans = DM_Sans({
+const dmSans = Quicksand({
   subsets: ["latin"],
   variable: "--font-dmsans",
   display: "swap",
@@ -72,7 +73,7 @@ export const metadata: Metadata = {
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  themeColor: "#5C1A34"
+  themeColor: "#7A1F4D"
 };
 
 export default function RootLayout({
