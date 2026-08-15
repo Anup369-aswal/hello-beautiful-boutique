@@ -1,8 +1,6 @@
-import dynamic from "next/dynamic";
 import { siteConfig } from "@/lib/config";
 import { buildWhatsAppLink } from "./WhatsAppButton";
-
-const Hero3D = dynamic(() => import("./Hero3D"), { ssr: false });
+import HeroShowcase from "./HeroShowcase";
 
 export default function Hero() {
   return (
@@ -37,7 +35,7 @@ export default function Hero() {
           </p>
 
           <div className="mt-9 flex flex-wrap items-center gap-4">
-            <a
+            
               href={buildWhatsAppLink(
                 "Hi Hello Beautiful Boutique, I would like to book a stitching consultation."
               )}
@@ -47,13 +45,13 @@ export default function Hero() {
             >
               Book a Stitching
             </a>
-            <a
+            
               href="#portfolio"
               className="rounded-full border border-wine/40 px-7 py-3.5 text-sm font-semibold text-wine transition-colors duration-300 hover:bg-wine/5"
             >
               View Our Designs
             </a>
-            <a
+            
               href={buildWhatsAppLink()}
               target="_blank"
               rel="noopener noreferrer"
@@ -73,7 +71,7 @@ export default function Hero() {
         </div>
 
         <div className="order-1 flex justify-center lg:order-2">
-          <Hero3D />
+          <HeroShowcase />
         </div>
       </div>
 
