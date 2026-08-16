@@ -289,39 +289,75 @@ export type GalleryItem = {
 export const galleryItems: GalleryItem[] = [
   {
     id: "gallery-01",
-    title: "From our atelier",
+    title: "Festive silk saree blouses",
     image: "/images/gallery/gallery-01.jpg",
-    alt: "Hello Beautiful Boutique design showcase"
+    alt: "Group of women in matching festive silk saree blouses by Hello Beautiful Boutique"
   },
   {
     id: "gallery-02",
-    title: "From our atelier",
+    title: "Bridal silk saree",
     image: "/images/gallery/gallery-02.jpg",
-    alt: "Hello Beautiful Boutique design showcase"
+    alt: "Bride in orange-pink silk saree blouse by Hello Beautiful Boutique"
   },
   {
     id: "gallery-03",
-    title: "From our atelier",
+    title: "Bridal lehenga",
     image: "/images/gallery/gallery-03.jpg",
-    alt: "Hello Beautiful Boutique design showcase"
+    alt: "Bride twirling in red bridal lehenga by Hello Beautiful Boutique"
   },
   {
     id: "gallery-04",
-    title: "From our atelier",
+    title: "Bridal lehenga, couple portrait",
     image: "/images/gallery/gallery-04.jpg",
-    alt: "Hello Beautiful Boutique design showcase"
+    alt: "Bride and groom portrait, red bridal lehenga by Hello Beautiful Boutique"
   },
   {
     id: "gallery-05",
-    title: "From our atelier",
+    title: "Kids festive wear",
     image: "/images/gallery/gallery-05.jpg",
-    alt: "Hello Beautiful Boutique design showcase"
+    alt: "Child in festive gold and cream outfit by Hello Beautiful Boutique"
   },
   {
     id: "gallery-06",
-    title: "From our atelier",
+    title: "Silk saree blouse detailing",
     image: "/images/gallery/gallery-06.jpg",
-    alt: "Hello Beautiful Boutique design showcase"
+    alt: "Close-up of red and gold silk saree blouse embroidery by Hello Beautiful Boutique"
+  },
+  {
+    id: "gallery-07",
+    title: "Festive silk sarees",
+    image: "/images/gallery/gallery-07.jpg",
+    alt: "Two women in festive silk saree blouses by Hello Beautiful Boutique"
+  },
+  {
+    id: "gallery-08",
+    title: "Bridal silk saree",
+    image: "/images/gallery/gallery-08.jpg",
+    alt: "Bride seated in pink-orange silk saree blouse by Hello Beautiful Boutique"
+  },
+  {
+    id: "gallery-09",
+    title: "Bridal silk saree, outdoor",
+    image: "/images/gallery/gallery-09.jpg",
+    alt: "Bride in green and orange silk saree blouse by Hello Beautiful Boutique"
+  },
+  {
+    id: "gallery-10",
+    title: "Bridal silk saree, close portrait",
+    image: "/images/gallery/gallery-10.jpg",
+    alt: "Close portrait of bride in green and red silk saree blouse by Hello Beautiful Boutique"
+  },
+  {
+    id: "gallery-11",
+    title: "Couple portrait, festive wear",
+    image: "/images/gallery/gallery-11.jpg",
+    alt: "Couple in turquoise-pink silk saree and cream sherwani by Hello Beautiful Boutique"
+  },
+  {
+    id: "gallery-12",
+    title: "Bridal silk saree, mandap",
+    image: "/images/gallery/gallery-12.jpg",
+    alt: "Bride in green and orange silk saree blouse at the mandap, by Hello Beautiful Boutique"
   }
 ];
 
