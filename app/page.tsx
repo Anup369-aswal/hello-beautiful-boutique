@@ -5,6 +5,7 @@ import Services from "@/components/Services";
 import Portfolio from "@/components/Portfolio";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import Process from "@/components/Process";
+import Gallery from "@/components/Gallery";
 import Reviews from "@/components/Reviews";
 import Instagram from "@/components/Instagram";
 import FAQ from "@/components/FAQ";
@@ -41,6 +42,7 @@ export default function HomePage() {
         <Portfolio />
         <WhyChooseUs />
         <Process />
+        <Gallery />
         <Reviews />
         <Instagram />
         <FAQ />
