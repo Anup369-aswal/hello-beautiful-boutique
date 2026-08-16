@@ -88,6 +88,7 @@ export const navLinks: NavLink[] = [
   { label: "Services", href: "#services" },
   { label: "Portfolio", href: "#portfolio" },
   { label: "Process", href: "#process" },
+  { label: "Gallery", href: "#gallery" },
   { label: "Reviews", href: "#reviews" },
   { label: "FAQ", href: "#faq" },
   { label: "Contact", href: "#contact" }
@@ -270,6 +271,57 @@ export const portfolioItems: PortfolioItem[] = [
     title: "Fabric-led custom design",
     image: "/images/portfolio/custom/custom-02.jpg",
     alt: "Custom outfit designed around client's own fabric"
+  }
+];
+
+/**
+ * Gallery: a free-flowing showcase of real boutique work and designs,
+ * separate from the categorized Portfolio grid above. Replace the
+ * placeholder images with real photographs at the same file paths.
+ */
+export type GalleryItem = {
+  id: string;
+  title: string;
+  image: string;
+  alt: string;
+};
+
+export const galleryItems: GalleryItem[] = [
+  {
+    id: "gallery-01",
+    title: "From our atelier",
+    image: "/images/gallery/gallery-01.jpg",
+    alt: "Hello Beautiful Boutique design showcase"
+  },
+  {
+    id: "gallery-02",
+    title: "From our atelier",
+    image: "/images/gallery/gallery-02.jpg",
+    alt: "Hello Beautiful Boutique design showcase"
+  },
+  {
+    id: "gallery-03",
+    title: "From our atelier",
+    image: "/images/gallery/gallery-03.jpg",
+    alt: "Hello Beautiful Boutique design showcase"
+  },
+  {
+    id: "gallery-04",
+    title: "From our atelier",
+    image: "/images/gallery/gallery-04.jpg",
+    alt: "Hello Beautiful Boutique design showcase"
+  },
+  {
+    id: "gallery-05",
+    title: "From our atelier",
+    image: "/images/gallery/gallery-05.jpg",
+    alt: "Hello Beautiful Boutique design showcase"
+  },
+  {
+    id: "gallery-06",
+    title: "From our atelier",
+    image: "/images/gallery/gallery-06.jpg",
+    alt: "Hello Beautiful Boutique design showcase"
   }
 ];
 
