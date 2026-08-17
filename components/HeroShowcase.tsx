@@ -17,38 +17,38 @@ const photos: ShowcasePhoto[] = [
     src: "/images/instagram/insta-04.jpg",
     alt: "Custom-stitched silk saree blouse by Hello Beautiful Boutique",
     rotate: "-rotate-6",
-    size: "h-64 w-52 sm:h-72 sm:w-60",
-    position: "left-0 top-6",
+    size: "h-56 w-44 sm:h-64 sm:w-52",
+    position: "left-0 top-14 sm:top-16",
     z: "z-10",
     floatDelay: "0s"
   },
   {
     src: "/images/instagram/insta-05.jpg",
     alt: "Pastel lehenga with contrast dupatta stitched by Hello Beautiful Boutique",
-    rotate: "rotate-3",
-    size: "h-72 w-56 sm:h-80 sm:w-64",
-    position: "left-24 top-0 sm:left-28",
+    rotate: "rotate-2",
+    size: "h-64 w-52 sm:h-72 sm:w-60",
+    position: "left-1/2 top-0 -translate-x-1/2",
     z: "z-20",
     floatDelay: "0.6s"
   },
   {
     src: "/images/instagram/insta-02.jpg",
     alt: "Black and gold embellished dance costume by Hello Beautiful Boutique",
-    rotate: "-rotate-2",
-    size: "h-60 w-48 sm:h-64 sm:w-56",
-    position: "left-48 top-16 sm:left-56",
-    z: "z-30",
+    rotate: "rotate-6",
+    size: "h-56 w-44 sm:h-64 sm:w-52",
+    position: "right-0 top-14 sm:top-16",
+    z: "z-10",
     floatDelay: "1.2s"
   }
 ];
 
 /**
- * Hero visual: a floating, gently tilting stack of real boutique photos,
- * replacing the abstract 3D shape with authentic work from Hello Beautiful.
+ * Hero visual: a floating, gently tilting fan of real boutique photos,
+ * spaced apart so all three remain fully visible (not stacked/overlapping).
  */
 export default function HeroShowcase() {
   return (
-    <div className="relative h-[26rem] w-full max-w-md sm:h-[30rem]">
+    <div className="relative h-[26rem] w-full max-w-lg sm:h-[30rem]">
       {/* Decorative gold ring accents */}
       <div
         aria-hidden="true"
