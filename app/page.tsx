@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
+import Designer from "@/components/Designer";
 import Services from "@/components/Services";
 import Portfolio from "@/components/Portfolio";
 import WhyChooseUs from "@/components/WhyChooseUs";
@@ -38,6 +39,7 @@ export default function HomePage() {
       <main id="main-content">
         <Hero />
         <About />
+        <Designer />
         <Services />
         <Portfolio />
         <WhyChooseUs />
