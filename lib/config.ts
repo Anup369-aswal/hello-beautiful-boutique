@@ -189,18 +189,60 @@ export type PortfolioItem = {
 
 export const portfolioItems: PortfolioItem[] = [
   {
-    id: "blouse-01",
+    id: "blouse-03",
     category: "Blouses",
-    title: "Hand-finished silk blouse",
-    image: "/images/portfolio/blouses/blouse-01.jpg",
-    alt: "Designer silk blouse with hand-finished neckline, stitched in Bangalore"
+    title: "Navy floral rose print blouse",
+    image: "/images/portfolio/blouses/blouse-03.jpg",
+    alt: "Navy blue deep-neck sleeveless blouse with rose floral print and gold border"
   },
   {
-    id: "blouse-02",
+    id: "blouse-04",
     category: "Blouses",
-    title: "High-neck embroidered blouse",
-    image: "/images/portfolio/blouses/blouse-02.jpg",
-    alt: "High-neck embroidered designer blouse"
+    title: "Olive shimmer blouse",
+    image: "/images/portfolio/blouses/blouse-04.jpg",
+    alt: "Olive green shimmer fabric sleeveless blouse"
+  },
+  {
+    id: "blouse-05",
+    category: "Blouses",
+    title: "Ikat print cutout blouse",
+    image: "/images/portfolio/blouses/blouse-05.jpg",
+    alt: "Grey ikat print blouse with cutout back and button detailing"
+  },
+  {
+    id: "blouse-06",
+    category: "Blouses",
+    title: "Mustard puff-sleeve blouse",
+    image: "/images/portfolio/blouses/blouse-06.jpg",
+    alt: "Mustard yellow blouse with gold zari border and puff sleeves"
+  },
+  {
+    id: "blouse-07",
+    category: "Blouses",
+    title: "Pink halter embroidered blouse",
+    image: "/images/portfolio/blouses/blouse-07.jpg",
+    alt: "Pink halter-neck blouse with gold sequin embroidered borders"
+  },
+  {
+    id: "blouse-08",
+    category: "Blouses",
+    title: "Gold zardozi bead-work blouse",
+    image: "/images/portfolio/blouses/blouse-08.jpg",
+    alt: "Blush gold blouse with pastel bead and zardozi embroidered neckline and sleeves"
+  },
+  {
+    id: "blouse-09",
+    category: "Blouses",
+    title: "Gold zardozi blouse, back detail",
+    image: "/images/portfolio/blouses/blouse-09.jpg",
+    alt: "Back view of blush gold blouse with beaded embroidery and deep back cut"
+  },
+  {
+    id: "blouse-10",
+    category: "Blouses",
+    title: "Gold blouse styled with matching saree",
+    image: "/images/portfolio/blouses/blouse-10.jpg",
+    alt: "Beaded gold blouse sleeves styled alongside a mint green Banarasi saree"
   },
   {
     id: "bridal-01",
