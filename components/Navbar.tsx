@@ -35,7 +35,7 @@ export default function Navbar() {
         <a href="#top" className="flex items-center">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/images/logo/logo.png"
+            src="/images/logo.png"
             alt="Hello Beautiful Designer Boutique — Design & Stitch"
             className="h-12 w-auto object-contain sm:h-14"
           />
