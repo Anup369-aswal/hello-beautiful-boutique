@@ -35,7 +35,7 @@ export default function Navbar() {
         <a href="#top" className="flex items-center">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/images/logo.png"
+            src="/images/logo/logo.png"
             alt="Hello Beautiful Designer Boutique — Design & Stitch"
             className="h-12 w-auto object-contain sm:h-14"
           />
@@ -44,7 +44,7 @@ export default function Navbar() {
         <ul className="hidden items-center gap-8 lg:flex">
           {navLinks.map((link) => (
             <li key={link.href}>
-              
+              <a
                 href={link.href}
                 className="relative text-sm font-medium text-charcoal transition-colors hover:text-wine after:absolute after:-bottom-1 after:left-0 after:h-px after:w-0 after:bg-gold after:transition-all after:duration-300 hover:after:w-full"
               >
@@ -55,7 +55,7 @@ export default function Navbar() {
         </ul>
 
         <div className="hidden items-center gap-3 lg:flex">
-          
+          <a
             href={buildWhatsAppLink(
               "Hi Hello Beautiful Boutique, I would like to book a stitching consultation."
             )}
@@ -100,7 +100,7 @@ export default function Navbar() {
         <ul className="flex flex-col gap-1 px-6 py-6">
           {navLinks.map((link) => (
             <li key={link.href}>
-              
+              <a
                 href={link.href}
                 onClick={() => setOpen(false)}
                 className="block border-b border-blush py-3 font-display text-lg text-charcoal"
@@ -110,7 +110,7 @@ export default function Navbar() {
             </li>
           ))}
           <li className="pt-4">
-            
+            <a
               href={buildWhatsAppLink(
                 "Hi Hello Beautiful Boutique, I would like to book a stitching consultation."
               )}
