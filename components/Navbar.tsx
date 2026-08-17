@@ -32,17 +32,19 @@ export default function Navbar() {
         aria-label="Primary"
         className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 sm:px-8 lg:px-12"
       >
-        <a href="#top" className="font-display text-xl font-semibold tracking-wide text-wine sm:text-2xl">
-          Hello Beautiful
-          <span className="ml-1.5 block text-[0.6rem] font-body font-medium uppercase tracking-widest2 text-gold-dark sm:text-xs">
-            Designer Boutique
-          </span>
+        <a href="#top" className="flex items-center">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/images/logo.png"
+            alt="Hello Beautiful Designer Boutique — Design & Stitch"
+            className="h-12 w-auto object-contain sm:h-14"
+          />
         </a>
 
         <ul className="hidden items-center gap-8 lg:flex">
           {navLinks.map((link) => (
             <li key={link.href}>
-              <a
+              
                 href={link.href}
                 className="relative text-sm font-medium text-charcoal transition-colors hover:text-wine after:absolute after:-bottom-1 after:left-0 after:h-px after:w-0 after:bg-gold after:transition-all after:duration-300 hover:after:w-full"
               >
@@ -53,7 +55,7 @@ export default function Navbar() {
         </ul>
 
         <div className="hidden items-center gap-3 lg:flex">
-          <a
+          
             href={buildWhatsAppLink(
               "Hi Hello Beautiful Boutique, I would like to book a stitching consultation."
             )}
@@ -98,7 +100,7 @@ export default function Navbar() {
         <ul className="flex flex-col gap-1 px-6 py-6">
           {navLinks.map((link) => (
             <li key={link.href}>
-              <a
+              
                 href={link.href}
                 onClick={() => setOpen(false)}
                 className="block border-b border-blush py-3 font-display text-lg text-charcoal"
@@ -108,7 +110,7 @@ export default function Navbar() {
             </li>
           ))}
           <li className="pt-4">
-            <a
+            
               href={buildWhatsAppLink(
                 "Hi Hello Beautiful Boutique, I would like to book a stitching consultation."
               )}
