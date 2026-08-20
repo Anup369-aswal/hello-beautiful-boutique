@@ -43,18 +43,15 @@ export const siteConfig = {
     longitude: 77.6101 // placeholder — replace with exact pin coordinates
   },
 
-  // TODO: Replace PLACE_ID with your real Google Place ID.
-  // Find it here: https://developers.google.com/maps/documentation/places/web-service/place-id
-  googlePlaceId: "PLACE_ID_PLACEHOLDER",
+  // Your Google Business Profile CID (from your Maps listing URL).
+  googlePlaceId: "1099160870023700934",
 
-  // TODO: Replace with your real "Write a review" / profile link from
-  // Google Business Profile (Share > this link, or the "Ask for reviews" link).
-  googleReviewsUrl:
-    "https://search.google.com/local/writereview?placeid=PLACE_ID_PLACEHOLDER",
+  // Links directly to your real Google Business Profile listing, where
+  // customers can click "Reviews" then "Write a review".
+  googleReviewsUrl: "https://www.google.com/maps?cid=1099160870023700934",
 
-  // TODO: Replace with your Google Maps share link ("Share" button on your
-  // Business Profile / Maps listing).
-  googleMapsUrl: "https://maps.google.com/?q=Hello+Beautiful+Boutique+BTM+2nd+Stage+Bengaluru",
+  // Direct link to your real Google Maps listing.
+  googleMapsUrl: "https://www.google.com/maps?cid=1099160870023700934",
 
   // Google Maps Embed API — see README "Connecting Google Maps" for the
   // exact steps and where your API key goes.
@@ -661,6 +658,7 @@ export const seo = {
   description:
     "Hello Beautiful Boutique is a designer ladies' boutique in BTM 2nd Stage, Bangalore, offering custom blouse stitching, bridal blouses, gowns, salwar suits and alterations. Book a consultation on WhatsApp.",
   keywords: [
+    "best designer boutique in Bangalore",
     "ladies boutique in Bangalore",
     "designer boutique in Bangalore",
     "best ladies tailor in Bangalore",
