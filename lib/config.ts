@@ -169,7 +169,8 @@ export interface PortfolioItem {
   alt: string;
 }
 
-export const portfolioItems: PortfolioItem[ // Old Blouse Designs (10)
+export const portfolioItems: PortfolioItem[] = [
+  // Old Blouse Designs (10)
   {
     id: "blouse-01",
     title: "Designer Blouse 01",
