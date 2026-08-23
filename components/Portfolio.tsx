@@ -31,10 +31,10 @@ export default function Portfolio() {
           </p>
         </Reveal>
 
-        <div className="mt-12 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mx-auto mt-12 grid max-w-4xl grid-cols-2 gap-4 sm:grid-cols-3 sm:gap-5">
           {visibleItems.map((item, i) => (
             <Reveal key={item.id} delayMs={(i % 6) * 70}>
-              <figure className="group relative aspect-[4/5] overflow-hidden rounded-2xl bg-blush shadow-card">
+              <figure className="group relative aspect-square overflow-hidden rounded-2xl bg-blush shadow-card">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src={item.image}
